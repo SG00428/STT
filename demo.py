@@ -43,15 +43,12 @@ def main():
     sum_squares = sum_of_squares_of_evens(limit)
     # Display the result
     display_result(limit, sum_squares)
-    
     # Collect even number
     even_numbers = collect_evens(limit)
     print(f"Even numbers from 1 to {limit}: {even_numbers}")
-    
     # Calculate and display the average of even number
     avg = average(even_numbers)
     print(f"Average of even numbers from 1 to {limit}: {avg:.2f}")
-    
     # Calculate and display the sum of even number
     even_sum = sum_of_evens(limit)
     print(f"Sum of even numbers from 1 to {limit}: {even_sum}")
