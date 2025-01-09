@@ -1,3 +1,13 @@
+"""
+This module performs several calculations on even numbers up to a given limit.
+It includes functions to:
+- Calculate the square of a number.
+- Check if a number is even.
+- Calculate the sum of squares of even numbers up to a given limit.
+- Calculate the average of even numbers up to a given limit.
+- Collect even numbers up to a given limit.
+- Calculate the sum of even numbers up to a given limit.
+"""
 # Function to calculate the square of a number
 def square(num):
     """
