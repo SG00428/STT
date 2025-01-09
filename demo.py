@@ -4,9 +4,7 @@ It includes functions to:
 - Calculate the square of a number.
 - Check if a number is even.
 - Calculate the sum of squares of even numbers up to a given limit.
-- Calculate the average of even numbers up to a given limit.
 - Collect even numbers up to a given limit.
-- Calculate the sum of even numbers up to a given limit.
 """
 # Function to calculate the square of a number
 def square(num):
@@ -55,17 +53,6 @@ def display_result(limit, result):
     """
     print(f"The sum of squares of even numbers from 1 to {limit} is: {result}")
 
-# Function to calculate the average of numbers in a given list
-def average(numbers):
-    """
-    Calculate the average of a list of numbers.
-    Args:
-    numbers (list): A list of numbers.
-    Returns:
-    float: The average of the numbers in the list.
-    """
-    return sum(numbers) / len(numbers)
-
 # Function to collect even numbers up to the given limit
 def collect_evens(limit):
     """
@@ -80,18 +67,6 @@ def collect_evens(limit):
         if is_even(i):
             evens.append(i)
     return evens
-
-# Function to calculate the sum of even numbers up to a given limit
-def sum_of_evens(limit):
-    """
-    Calculate the sum of all even numbers from 1 to the given limit.
-    Args:
-    limit (int): The upper limit for summing even numbers.
-    Returns:
-    int: The sum of even numbers from 1 to the limit.
-    """
-    evens = collect_evens(limit)
-    return sum(evens)
 
 # Main function to tie everything together
 def main():
@@ -108,12 +83,6 @@ def main():
     # Collect even numbers
     even_numbers = collect_evens(limit)
     print(f"Even numbers from 1 to {limit}: {even_numbers}")
-    # Calculate and display the average of even numbers
-    avg = average(even_numbers)
-    print(f"Average of even numbers from 1 to {limit}: {avg:.2f}")
-    # Calculate and display the sum of even numbers
-    even_sum = sum_of_evens(limit)
-    print(f"Sum of even numbers from 1 to {limit}: {even_sum}")
 
 if __name__ == "__main__":
     main()
